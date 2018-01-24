@@ -1,0 +1,37 @@
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<div style="margin: 0 auto; text-align: center;">
+    <input id="inputFileToLoad" type="file" onchange="encodeImageFileAsURL();" />
+    <textarea id="imageText" style="display: none;"></textarea>
+
+    <br/><br/>
+
+    <input type="radio" name="options" id="radio1" value="1"/> 1 <input id="inputTxtOpt1" class="inp" type="text"/><br/><br/>
+    <input type="radio" name="options" id="radio2" value="2"/> 2 <input id="inputTxtOpt2" class="inp" type="text"/><br/><br/>
+    <input type="radio" name="options" id="radio3" value="3"/> 3 <input id="inputTxtOpt3" class="inp" type="text"/><br/><br/>
+    <input type="radio" name="options" id="radio4" value="4"/> 4 <input id="inputTxtOpt4" class="inp" type="text"/><br/><br/>
+
+    <div> Hints </div>
+
+    1 <input id="inputTxtHint1" class="inp" type="text"/><br/><br/>
+    2 <input id="inputTxtHint2" class="inp" type="text"/><br/><br/>
+    3 <input id="inputTxtHint3" class="inp" type="text"/><br/><br/>
+    4 <input id="inputTxtHint4" class="inp" type="text"/><br/><br/>    
+
+    <div> M Name </div>
+    <input id="inputTxtMName" class="inp" type="text"/><br/><br/>    
+
+    <input type="button" onclick="generateIt();" value="Generate It"/><br/><br/> 
+    <input type="button" onclick="getpuzzle(5);" value="Get"/><br/><br/> 
+
+    <div id="output"></div>
+
+    <div id="imgTest"></div>
+
+    <textarea id="txtJsonData" style="width: 1032px; height: 158px;"></textarea>
+
+    <textarea id="txtImgData" style="width: 1032px; height: 158px;"></textarea>
+</div>
